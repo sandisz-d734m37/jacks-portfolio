@@ -48,12 +48,13 @@ export default function Book({ bookCover, bookPages }) {
             onClick={(e) => e.stopPropagation()}
           >
             <HTMLFlipBook
-              width={isMobile ? 300 : 480}
+              autoSize={true}
+              width={isMobile ? 285 : 480}
               height={isMobile ? 400 : 683}
               size="stretch"
-              minWidth={300}
-              maxWidth={isMobile ? 350 : 480}
-              maxHeight={isMobile ? 500 : 683}
+              minWidth={285}
+              maxWidth={isMobile ? 285 : 480}
+              maxHeight={isMobile ? 400 : 683}
               drawShadow={true}
               flippingTime={800}
               usePortrait={isMobile}
@@ -65,7 +66,7 @@ export default function Book({ bookCover, bookPages }) {
               {bookPages.map((photo, i) => (
                 <div
                   key={i}
-                  className="border border-black rounded-2xl bg-white dark:bg-neutral-800 flex items-center justify-center"
+                  className="border border-black rounded-2xl overflow-hidden bg-white dark:bg-neutral-800 flex items-center justify-center"
                 >
                   <img
                     src={photo.src}
