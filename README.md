@@ -1,16 +1,26 @@
 <hr/>
+
 # READ ME
-##### Follow these instructions to run your site localle
+
+##### Follow these instructions to run your site locally
+
 <hr/>
+
 ### PREREQRESITES
+
 <hr/>
+
 Do or install these things first
 
 - install [VSCode]([url](https://code.visualstudio.com/download)) (code editor) (you could use VMware if you don't want to install anything, but I don't recommend it)
 - open your terminal (you've got this)
+
 <hr/>
+
 ### From your terminal
+
 <hr/>
+
 #### Navigate to wherever you want to install this codebase
 input `cd ~` 
 input `mkdir MyPortfolio` 
@@ -18,19 +28,29 @@ input `cd MyPortfolio`
 input `git clone git@github.com:sandisz-d734m37/jacks-portfolio.git`
 wait or follow the prompt
 input `code ./jacks-portfolio` - this should open up VScode
+
 <hr/>
+
 ### From VScode
+
 <hr/>
-Open a Terminal (<strong>Terminal > New Terminal</strong>) or (<strong>ctrl / cmnd + shift + `</strong>)
+
+Open a Terminal (<strong>Terminal > New Terminal</strong>)
 input `npm install`
 input `npm run dev`
 wait until your terminal stops doing anything
 press `o` - this should open your site in LocalHost for viewing
+
 <hr/>
+
 <hr/>
+
 <hr/>
+
 ### EXTRA INFO
+
 <hr/>
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
