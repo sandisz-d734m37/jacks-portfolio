@@ -2,8 +2,8 @@ import { useState } from "react";
 import LegendNav from "./components/legendNav";
 import Section from "./components/Section";
 import FullScreenSection from "./components/FullScreenSection";
-import Library from "./components/Library";
-// import SidescrollingPhotographyPage from "./components/SidescrollingPhotographyPage";
+// import Library from "./components/Library";
+import SidescrollingPhotographyPage from "./components/SidescrollingPhotographyPage";
 // import PhotographyGridPage from "./components/PhotographyGridPage";
 
 function App() {
@@ -63,17 +63,17 @@ function App() {
           </div>
         </FullScreenSection>
 
-        <Section id="library">
+        {/* <Section id="library">
           <Library />
-        </Section>
+        </Section> */}
 
         {/* <Section id="graphics">
           <GraphicsPage />
         </Section> */}
 
-        {/* <Section id="side-scroller">
+        <Section id="side-scroller">
           <SidescrollingPhotographyPage />
-        </Section> */}
+        </Section>
 
         {/* <Section id="photo-grid">
           <PhotographyGridPage />
