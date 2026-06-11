@@ -38,30 +38,27 @@ function App() {
         }`}
       >
         <FullScreenSection id="home">
-          <div className="d-flex justify-content-left align-items-left ml-[5vh]">
-            <div className="text-left">
-              <div className="flex justify-left mb-4">
+          <div className="d-flex justify-content-center align-items-center">
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
                 <img
                   src="https://jackweaklyportfolio.s3.us-east-2.amazonaws.com/Portfolio+Assets/ToothandNailLogoMain.png"
                   alt="Tooth And Nail logo"
-                  className="w-[200px] h-[200px] mb-[5vh] mt-[10vh]"
+                  className="w-[200px] h-[200px] mb-[5vh] mt-[15vh]"
                 />
               </div>
 
               <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
 
-              <div className="d-flex flex-col gap-3">
+              <div className="d-flex flex-col gap-3 py-5">
                 {sections.map((section, idx) => (
-                  <div>
-                    <button
-                      key={section.id}
-                      onClick={() => scrollToSection(idx)}
-                      className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
-                    >
-                      {section.label}
-                    </button>
-                    <br />
-                  </div>
+                  <button
+                    key={section.id}
+                    onClick={() => scrollToSection(idx)}
+                    className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
+                  >
+                    {section.label}
+                  </button>
                 ))}
               </div>
             </div>
