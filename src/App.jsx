@@ -34,31 +34,34 @@ function App() {
 
       <div
         className={`transition-all duration-300 flex-1 ${
-          sidebarOpen ? "ml-32 sm:ml-52" : "ml-0 sm:ml-20"
+          sidebarOpen ? "ml-32 sm:ml-52" : "ml-0 sm:ml-5"
         }`}
       >
         <FullScreenSection id="home">
-          <div className="d-flex justify-content-center align-items-center">
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
+          <div className="d-flex justify-content-left align-items-left ml-[5vh]">
+            <div className="text-left">
+              <div className="flex justify-left mb-4">
                 <img
                   src="https://jackweaklyportfolio.s3.us-east-2.amazonaws.com/Portfolio+Assets/ToothandNailLogoMain.png"
-                  alt="Jack Fucking Weakly"
-                  className="w-[200px] h-[200px] mb-[5vh] mt-[30vh]"
+                  alt="Tooth And Nail logo"
+                  className="w-[200px] h-[200px] mb-[5vh] mt-[10vh]"
                 />
               </div>
 
               <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
 
-              <div className="d-flex flex-col gap-3 py-5">
+              <div className="d-flex flex-col gap-3">
                 {sections.map((section, idx) => (
-                  <button
-                    key={section.id}
-                    onClick={() => scrollToSection(idx)}
-                    className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
-                  >
-                    {section.label}
-                  </button>
+                  <div>
+                    <button
+                      key={section.id}
+                      onClick={() => scrollToSection(idx)}
+                      className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
+                    >
+                      {section.label}
+                    </button>
+                    <br />
+                  </div>
                 ))}
               </div>
             </div>
@@ -86,11 +89,11 @@ function App() {
         </Section>
 
         <Section id="contact">
-          <h2 className="text-4xl font-semibold mb-2">Contact</h2>
-          <p>
+          <h2 className="ml-2 text-4xl font-semibold mb-2">Contact</h2>
+          <p className="ml-2">
             <a href="https://www.instagram.com/jackadaktal/">@jackadaktal</a>
           </p>
-          <p>
+          <p className="ml-2">
             <a href="mailto:hello@toothandnail.xyz">hello@toothandnail.xyz</a>
           </p>
         </Section>
