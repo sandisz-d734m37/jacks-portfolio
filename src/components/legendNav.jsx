@@ -51,14 +51,14 @@ export default function LegendNav({ sections, onToggle }) {
 
   return (
     <div
-      className="fixed left-0 top-0 bottom-0 flex border-r border-black dark:border-white bg-white
+      className="fixed left-0 top-0 bottom-0 flex bg-white
                     dark:bg-neutral-800 transition-all duration-300 z-50"
     >
       {/* Left column: line + red dot */}
-      <div className="relative lg:w-12 w-5 flex flex-col items-center py-6">
+      <div className="relative lg:w-6 w-3 flex flex-col items-center py-6 ml-1">
         <button
           onClick={handleToggle}
-          className="mb-4 relative w-6 h-6 flex flex-col justify-center items-center gap-1"
+          className="mb-4 relative w-3 h-6 flex flex-col justify-center items-center gap-1"
         >
           <span
             className={`block w-2 h-0.5 bg-black dark:bg-white transform transition-all duration-300 ${
@@ -78,16 +78,10 @@ export default function LegendNav({ sections, onToggle }) {
         </button>
 
         <div className="relative flex flex-col items-center h-full w-full">
-          {/* Top cap */}
-          <div
-            className="absolute top-0 bg-black dark:bg-white"
-            style={{ width: capWidth, height: capHeight }}
-          />
-
           {/* Vertical line */}
           <div
             ref={lineRef}
-            className="relative flex-1 bg-black dark:bg-white cursor-pointer my-[12px]"
+            className="relative flex-1 cursor-pointer my-[12px]"
             style={{ width: `${lineThickness}px` }}
             onClick={(e) => {
               if (!lineRef.current) return;
@@ -103,16 +97,14 @@ export default function LegendNav({ sections, onToggle }) {
           >
             {/* Red dot */}
             <div
-              className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full bg-black border border-black transition-all duration-150"
-              style={{ top: `calc(${scrollPercent * 100}% - 0.5rem)` }}
+              className="absolute left-1/2 -translate-x-1/2 bg-black transition-all duration-150"
+              style={{
+                top: `calc(${scrollPercent * 100}% - 1rem)`,
+                width: "2px",
+                height: "32px",
+              }}
             />
           </div>
-
-          {/* Bottom cap */}
-          <div
-            className="absolute bottom-0 bg-black dark:bg-white"
-            style={{ width: capWidth, height: capHeight }}
-          />
         </div>
       </div>
 

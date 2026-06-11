@@ -8,10 +8,10 @@ const photos = Array.from({ length: 42 }, (_, i) => ({
 }));
 
 export default function PhotographyGridPage() {
-    return (
-          <div>
-                <h2 className="text-4xl font-semibold mb-6">Miscellanious</h2>
-                <PhotoGrid photos={photos} />
-          </div>
-        );
+  return (
+    <div>
+      <h2 className="text-4xl font-semibold mb-6 ml-2">Miscellanious</h2>
+      <PhotoGrid photos={photos} />
+    </div>
+  );
 }

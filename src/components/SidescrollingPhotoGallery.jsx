@@ -114,7 +114,7 @@ export default function SidescrollingPhotoGallery({ photos }) {
   return (
     <>
       {/* horizontal gallery */}
-      <div className="flex overflow-x-auto gap-4 pb-4">
+      <div className="ml-2 flex overflow-x-auto gap-2 pb-4">
         {photos.map((photo, index) => (
           <img
             key={index}
