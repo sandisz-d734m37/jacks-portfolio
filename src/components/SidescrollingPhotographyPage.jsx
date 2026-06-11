@@ -25,18 +25,18 @@ const elizabethBay = Array.from({ length: 17 }, (_, i) => ({
 export default function EcomPhotographs() {
       return (
               <div>
-                    <h2 className="text-4xl font-semibold mb-6">Cut And Sew</h2>h2>
+                    <h2 className="text-4xl font-semibold mb-6">Cut And Sew</h2>
               
-                    <h4 className="text-xl font-semibold mb-4">Puppet Theater</h4>h4>
+                    <h4 className="text-xl font-semibold mb-4">Puppet Theater</h4>
                     <SidescrollingPhotoGallery photos={puppetTheater} />
               
-                    <h4 className="text-xl font-semibold mb-4">Shell Corp.</h4>h4>
+                    <h4 className="text-xl font-semibold mb-4">Shell Corp.</h4>
                     <SidescrollingPhotoGallery photos={shellCorp} />
               
-                    <h4 className="text-xl font-semibold mb-4">Rose In Good Faith</h4>h4>
+                    <h4 className="text-xl font-semibold mb-4">Rose In Good Faith</h4>
                     <SidescrollingPhotoGallery photos={roseInGoodFaith} />
               
-                    <h4 className="text-xl font-semibold mb-4">Elizabeth Bay ltd.</h4>h4>
+                    <h4 className="text-xl font-semibold mb-4">Elizabeth Bay ltd.</h4>
                     <SidescrollingPhotoGallery photos={elizabethBay} />
               </div>
             );
